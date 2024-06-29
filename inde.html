@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NCC Calculator</title>
+<link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Application Form</h1>
+        <form id="applicationForm">
+            <div>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div>
+                <label for="school">School Name:</label>
+                <input type="text" id="school" name="school" required>
+            </div>
+            <div>
+                <label for="father">Father's Name:</label>
+                <input type="text" id="father" name="father" required>
+            </div>
+            <div>
+                <label for="mother">Mother's Name:</label>
+                <input type="text" id="mother" name="mother" required>
+            </div>
+            <div>
+                <label for="class">Class:</label>
+                <input type="text" id="class" name="class" required>
+            </div>
+            <div>
+                <label for="gmail">Gmail ID:</label>
+                <input type="email" id="gmail" name="gmail" required>
+            </div>
+            <div>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div>
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required>
+            </div>
+            <div>
+                <label for="joiningYear">NCC Joining Year:</label>
+                <input type="number" id="joiningYear" name="joiningYear" min="1900" max="2099" step="1" required>
+            </div>
+            <button type="submit">Submit Application</button>
+        </form>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>
